@@ -1,0 +1,215 @@
+ /*===============================================================basic styling==================================================================*/  
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color:black;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+/*===============================================================header styles==================================================================*/
+header{
+    width:100%;
+    padding-bottom: 250px;
+    
+
+}
+.head-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:450px;
+    background: linear-gradient(to bottom, #006666 0%, #009999 100%);
+}
+ 
+h1{
+    padding-top: 200px;
+    margin:50px;
+    color:white;
+    margin-bottom: 0px;
+}
+
+#head-para{
+    color: rgb(219, 219, 219);
+    font-size: 15px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+#head-btn{
+    margin-top:10px;
+    background-color: rgb(58, 201, 58);
+    padding:5px;
+    border: none;
+    color:white;
+    border-radius: 5px;
+}
+
+/*===============================================================haeder-cards style==================================================================*/
+ 
+
+.card{
+    margin-top:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-content{
+
+    background-color:aliceblue ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:50px;
+    width:325px;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 3px 3px 10px rgb(196, 195, 195);
+    
+}
+
+.card-content p{
+    margin-top:10px;
+    color: rgb(81, 80, 80);
+    font-size: 12px;
+    text-align: left;
+}
+
+#icon{
+    font-size: 50px;
+}
+
+.progress{
+    margin: 10px 225px 30px 150px
+}
+
+.progress h2{
+    text-align: center; 
+    color:  rgb(128, 127, 127);
+}
+
+/*==============================================================progress style============================================================*/
+ .progress p{
+    padding-top: 80px;
+    color:  rgb(151, 151, 151);
+    width: 900px;
+    text-align: bottom;
+ }
+ .progress-content{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*prgress bar allignment*/
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background:aliceblue;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: rgb(137, 137, 137);
+    position: absolute;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  
+  .mask .fill-1 {
+    background-color:#009999;
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    transform: rotate(135deg);
+  }
+ 
+  .mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color:#009999;
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    transform: rotate(90deg);
+  }
+  
+  
+  .mask .fill-3 { 
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #009999;
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    transform: rotate(180deg);
+  }
+
+  @media only screen and (max-width: 400px) {
+    .head-content h1{
+        width:300px
+        margin:25px;
+        margin-top: 400px;
+        font-size: 18px;
+        text-align: left;
+        height:0px;
+        position: relative;
+    }
+
+    .head-content p {
+         font-size: 12px;
+    }
+    .card{
+        margin-top:200px;
+        margin-left:50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+        
+    }
+
+
+  }
